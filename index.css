@@ -7,6 +7,10 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
+p{
+    line-height: 24px;
+}
+
 /* Color Variables Starts */
 
 :root{
@@ -18,6 +22,15 @@
     --border-color: #0E0E0E;
     --border-color-blurred: rgb(14, 14, 14, 0.15);
     --shadow-color: rgb(0, 0, 0, 0.25);
+    --vision-box-1: rgb(84, 144, 245, 0.2);
+    --vision-box-2: #C6E4D6;
+    --vision-box-3: #F7EBCF;
+    --vision-box-1-button: #5490F5;
+    --vision-box-2-button: #09A15C;
+    --vision-box-3-button: #FFC239;
+    --vision-box-1-button-hover: #2168e2;
+    --vision-box-2-button-hover: #047240;
+    --vision-box-3-button-hover: #eba70a;
 
     --border-color: #2e344e;
     --background-light-color: #f1f1f1;
@@ -143,7 +156,7 @@
 }
 
 .pillar-box{
-    padding: 24px;
+    padding: 40px;
     background: var(--white-color);
     border: 1px solid var(--border-color-blurred);
     border-radius: 16px;
@@ -172,3 +185,154 @@
 }
 
 /* CSS For Pillar Ends */
+
+/* CSS For Vision Starts */
+
+.vision{
+    margin-bottom: 80px;
+}
+
+.vision h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.vision p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+.vision-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-block: 32px;
+}
+
+.vision-box{
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.vision-box img{
+    width: 62px;
+    aspect-ratio: 1/1;
+}
+
+.vision-box h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.vision-box p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+.vision-box button{
+    outline: none;
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white-color);
+    transition: 0.5s ease;
+    align-self: flex-start;
+}
+
+.vision-box:nth-child(1){
+    background: var(--vision-box-1);
+
+}
+
+.vision-box:nth-child(1) button{
+    background: var(--vision-box-1-button);
+}
+
+.vision-box:nth-child(1) button:hover{
+    background: var(--vision-box-1-button-hover);
+}
+
+.vision-box:nth-child(2){
+    background: var(--vision-box-2);
+}
+
+.vision-box:nth-child(2) button{
+    background: var(--vision-box-2-button);
+}
+
+.vision-box:nth-child(2) button:hover{
+    background: var(--vision-box-2-button-hover);
+}
+
+.vision-box:nth-child(3){
+    background: var(--vision-box-3);
+}
+
+.vision-box:nth-child(3) button{
+    background: var(--vision-box-3-button);
+}
+
+.vision-box:nth-child(3) button:hover{
+    background: var(--vision-box-3-button-hover);
+}
+
+
+.yunus{
+    position: relative;
+    padding: 48px 24px;
+    background: var(--white-color);
+    border: 1px solid var(--border-color-blurred);
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px var(--shadow-color);
+}
+
+.yunus div{
+    position: relative;
+}
+
+.yunus img{
+    position: absolute;
+    top: -20%;
+    left: 0;
+    z-index: 2;
+}
+
+.yunus h6{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    opacity: 0.8;
+    margin-bottom: 16px;
+    line-height: 24px;
+}
+
+.yunus h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+}
+
+.yunus p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+
+/* CSS For Vision Ends */
