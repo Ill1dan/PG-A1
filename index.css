@@ -12,9 +12,12 @@
 :root{
     --primary-color: #0E0E0E;
     --secondary-color: #006A50;
-    --background-color: #F5F5F5;
+    --background-color: #F1F1F3;
     --background-banner-color: #C6E4D6;
     --white-color: #ffffff;
+    --border-color: #0E0E0E;
+    --border-color-blurred: rgb(14, 14, 14, 0.15);
+    --shadow-color: rgb(0, 0, 0, 0.25);
 
     --border-color: #2e344e;
     --background-light-color: #f1f1f1;
@@ -33,6 +36,7 @@
 
 .container{
     padding-inline: 160px;
+    background: var(--background-color);
 }
 
 /* CSS For Container Ends */
@@ -118,3 +122,53 @@
 }
 
 /* CSS For Banner Ends */
+
+/* CSS For Pillar Starts */
+
+.pillar{
+    margin-bottom: 80px;
+}
+
+.pillar h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 32px;
+}
+
+.pillar-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.pillar-box{
+    padding: 24px;
+    background: var(--white-color);
+    border: 1px solid var(--border-color-blurred);
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px var(--shadow-color);
+}
+
+.pillar-box img{
+    width: 62px;
+    aspect-ratio: 1/1;
+    margin-bottom: 24px;
+}
+
+.pillar-box h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+.pillar-box p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+/* CSS For Pillar Ends */
