@@ -19,4 +19,4 @@ Bangladesh 2.0 is a visionary project aimed at redefining the nation's trajector
 - **CSS**: For styling the website, including the use of CSS variables for color themes and responsive design.
 
 ## Live Link
-- 
+- https://ill1dan.github.io/PG-A1/
