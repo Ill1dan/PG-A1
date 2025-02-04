@@ -151,6 +151,11 @@ p{
     border: 1px solid var(--border-color-blurred);
     border-radius: 16px;
     box-shadow: 0px 4px 4px var(--shadow-color);
+    transition: 0.2s ease;
+}
+
+.pillar-box:hover{
+    scale: 1.05;
 }
 
 .pillar-box img{
@@ -210,6 +215,11 @@ p{
     flex-direction: column;
     justify-content: space-between;
     gap: 24px;
+    transition: 0.2s ease;
+}
+
+.vision-box:hover{
+    scale: 1.05;
 }
 
 .vision-box img{
@@ -402,7 +412,7 @@ p{
 
 /* CSS For Opinion Ends */
 
-/* CSS For News Ends */
+/* CSS For News Starts */
 
 .news{
     margin-bottom: 80px;
@@ -435,6 +445,7 @@ p{
     display: flex;
     align-items: center;
     gap: 32px;
+    box-shadow: 0px 4px 4px var(--shadow-color);
 }
 
 .news-box img{
@@ -488,3 +499,111 @@ p{
 }
 
 /* CSS For News Ends */
+
+/* CSS For Donate Starts */
+
+.donate{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.donate-header{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.donate-header h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.donate-header p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    opacity: 0.7;
+    text-align: center;
+}
+
+.donate-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.donate-box{
+    padding: 40px;
+    background: var(--white-color);
+    border: 1px solid var(--border-color-blurred);
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px var(--shadow-color);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.donate-box:hover{
+    background: var(--secondary-color)!important;
+    scale: 1.1;
+}
+
+.donate-box:hover h3{
+    color: var(--white-color);
+    opacity: 1;
+}
+
+.donate-box h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.donate-box:nth-child(2){
+    box-shadow: 0 0;
+    background: var(--vision-box-2);
+}
+
+.donate input{
+    max-width: 1032px;
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 4px var(--shadow-color);
+}
+
+.donate input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary-color);
+    opacity: 0.3;
+}
+
+.donate button{
+    outline: none;
+    border: 0;
+    padding: 17px 34px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white-color);
+    background: var(--secondary-color);
+    transition: 0.5s ease;
+}
+
+.donate button:hover{
+    background: var(--white-color);
+    color: var(--secondary-color);
+}
+
+/* CSS For Donate Ends */
